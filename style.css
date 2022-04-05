@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+div.main_container{
+    width: 1000px;
+    height: 50vh;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: clip;
+}
+
+.data_container{
+    width: 50%;
+    height: 100%;
+    padding: 3em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.data_container h1 strong{
+    color: hsl(277, 64%, 61%);
+}
+.data_container p.middel_para{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    line-height: 24px;
+    padding-right:4em;
+    text-align: left;
+}
+.data_container:is(h1, p, div) {
+    color: white;
+    margin: auto;
+}
+.data_container div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.data_container div p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.data_container div p small{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight:lighter;
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 1px;
+}
+.img_container{
+    width: 50%;
+    height: 100%;
+    background: url("./images/image-header-desktop.jpg") no-repeat;
+    background-color: hsl(277, 64%, 61%);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+@media screen and (max-width:1000px){
+    div.main_container{
+        width: 80%;
+        background-color: hsl(244, 38%, 16%);
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        margin-top: 80px;
+        
+    }
+    .img_container{
+        width: 100%;
+        height: 40vh;
+        background: url("./images/image-header-mobile.jpg") no-repeat;
+        background-color: hsl(277, 64%, 61%);
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+    .data_container{
+        width: 90%;
+        height: fit-content;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    
+    }
+    .data_container div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .data_container p.middel_para{
+        padding-right:0;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+}
+@media screen and (max-width:465px){
+    div.main_container{
+        width: 90%;
+        background-color: hsl(244, 38%, 16%);
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        margin-top: 80px;
+        
+    }
+    .data_container{
+        width: 95%;
+        height: fit-content;
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    
+    }
+    .data_container div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .data_container p.middel_para{
+        padding-right:0;
+        text-align: center;
+        margin: 2em 0;
+        font-size: 17px;
+    }
+
+}
